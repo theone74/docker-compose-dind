@@ -54,7 +54,7 @@ jobs:
         # List of tags
         tags: ${{ steps.docker_meta.outputs.tags }},latest
         # Always attempt to pull a newer version of the image
-#         pull: # optional, default is false
+        pull: true
         # Sets the target stage to build
 #         target: # optional
         # List of extra privileged entitlement (eg. network.host,security.insecure)
