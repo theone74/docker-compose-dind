@@ -52,7 +52,7 @@ jobs:
         # List of metadata for an image
         labels: ${{ steps.docker_meta.outputs.labels }}
         # List of tags
-        tags: ${{ steps.docker_meta.outputs.tags }},latest
+        tags: ${{ steps.docker_meta.outputs.tags }}
         # Always attempt to pull a newer version of the image
         pull: true
         # Sets the target stage to build
